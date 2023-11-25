@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .background-image {
+            width: 100%;
+            height: 60%;
+            background: url('https://easyletresidential.co.uk/wp-content/uploads/2022/09/shutterstock_1892390203.jpg') no-repeat center center/cover;
+            filter: brightness(50%);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .text-container {
+            width: 100%;
+            text-align: center;
+            color: #000000;
+            margin-right: 20px;
+            justify-content: right;
+        }
+
+        .text {
+            color: rgb(14, 14, 14);
+            font-weight: bold;
+            font-size: 58px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .sub-text {
+            font-size: 18px;
+            margin-bottom: 40px;
+            margin-right: 20px;
+        }
+
+        .right-align {
+            text-align: right;
+            color: rgb(239, 8, 8);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            padding: 10px;
+        }
+
+        .boxes-container {
+            background-color: #8B4513; /* Brown background color for the boxes container */
+            padding: 20px; /* Adjust as needed */
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            z-index: 1;
+            margin-top: 10px;
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin-bottom: 20px; /* Adjust as needed */
+        }
+
+        .box {
+            font-size: 24px;
+            color: white;
+            background-color: #8B4513;
+            border-radius: 50%;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .box:hover {
+            background-color: rgb(225, 189, 141);
+        }
+
+        .content {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        header {
+            background: #382307;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #000;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header .profile-icon {
+            margin-left: 20px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        .white-bg {
+            background-color: #f5f5f5;
+            padding: 150px 0; /* Increased padding to create more space around the content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center; /* Center-align the content */
+        }
+        .homepage-content {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .homepage-content h2 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .homepage-content p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #8B4513;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #A52A2A;
+        }
+
+        .footer {
+            background: #3f2107;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="white-bg">
+        <div class="homepage-content">
+            <h2>Welcome to FurniJourney</h2>
+            <p>Reliable and efficient moving services to make your relocation stress-free.</p>
+            <a href="services.html" class="cta-button">Get a Quote</a>
+        </div>
+    </div>
+
+    <div class="container">
+       
+            <div class="text-container">
+                <div class="right-align">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="boxes-container">
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-box"></i>
+            </div>
+            <div class="content">Efficient Packing</div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div class="content">Safe Delivery</div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="content">All Over India</div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="content">Verififed Packers</div>
+        </div>
+    </div>
+
+   
+
+    <header>
+        <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    
+
+    <div class="footer">
+        &copy; 2023 Furni Journey. All rights reserved.
+    </div>
+</body>
+
+</html>

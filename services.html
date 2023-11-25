@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni Journey - Our Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d2b48c;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://easyletresidential.co.uk/wp-content/uploads/2022/09/shutterstock_1892390203.jpg') center/cover no-repeat;
+            z-index: -1;
+            filter: brightness(50%);
+        }
+
+        header {
+            background: #382307; /* Woody brown background for nav bar */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #000;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+    width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1000px;
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        .service-box {
+            flex: 1;
+            background: #ffffff;
+            color: #000;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin: 0 15px;
+            box-sizing: border-box;
+            border: 2px solid #000;
+            transition: all 0.3s ease;
+        }
+
+        .service-box img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        header .profile-icon {
+            margin-left: 20px; /* Added margin to create space between icon and left corner */
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .footer {
+            background: #3f2107;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        a:link {
+    color: #000; /* Set the color to black */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: rgb(101, 60, 6); /* Set the color to black */
+    text-decoration: underline; /* Add underline on hover if desired */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+        <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="services-container">
+        <div class="service-box">
+            
+            <img src="moving.png" alt="Moving Service" width="550" height="100">
+            <a href="moving.html"><h2>Moving</h2></a>
+            <p>Our moving service helps you relocate your belongings to a new place safely and efficiently. We ensure a smooth and hassle-free moving experience for you.</p>
+        </div>
+        <div class="service-box">
+           
+            <img src="relocating.png" alt="Relocating Service" width="550" height="100">
+            <a href="relocating.html"> <h2>Relocating</h2></a>
+            <p>Relocating to a new city? Our professional team will assist you in every step of the way, making your relocation process stress-free and convenient.</p>
+        </div>
+        <div class="service-box">
+            
+            <img src="storage.png" alt="Storage Solutions" width="550" height="100">
+            <a href="storage.html"> <h2>Storage Solutions</h2></a>
+            <p>Need storage solutions? We offer secure and reliable storage services for your belongings. Our facilities are equipped to handle various storage needs.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 Furni Journey. All rights reserved.
+    </div>
+
+</body>
+</html>

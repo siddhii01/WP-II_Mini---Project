@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni Journey - Moving Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d2b48c; /* Woody brown background */
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://easyletresidential.co.uk/wp-content/uploads/2022/09/shutterstock_1892390203.jpg') center/cover no-repeat;
+            z-index: -1;
+            filter: brightness(50%); /* Adjust brightness if needed */
+        }
+
+        header {
+            background: #382307;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #000;
+        }
+
+        header .profile-icon {
+            margin-left: 20px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form select,
+        .contact-form textarea,
+        .contact-form button {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(100% - 30px);
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background: #382307;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #574522;
+        }
+
+        .footer {
+            background: #3f2107;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <header>
+        <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Moving Service</h1>
+        <div class="contact-form">
+            <form action="moving.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email Address" required><br>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required><br>
+                <select name="state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <!-- Add more Indian states as options -->
+                </select><br>
+                <select name="city" required>
+                    <option value="" disabled selected>Select City</option>
+                    <!-- Cities based on selected state -->
+                    <option value="Mumbai">Mumbai</option>
+                </select><br>
+                <input type="text" name="currentAddress" placeholder="Current Address" required><br>
+                <input type="text" name="newAddress" placeholder="New Address" required><br>
+                <input type="date" name="movingDate" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 Furni Journey. All rights reserved.
+    </div>
+
+    <script>
+        // Add your JavaScript code here if needed
+    </script>
+</body>
+
+</html>

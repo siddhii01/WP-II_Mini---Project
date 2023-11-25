@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted Successfully</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d2b48c; /* Woody brown background */
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://easyletresidential.co.uk/wp-content/uploads/2022/09/shutterstock_1892390203.jpg') center/cover no-repeat;
+            z-index: -1;
+            filter: brightness(50%); /* Adjust brightness if needed */
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .success-icon {
+            font-size: 72px;
+            color: #00cc00;
+            margin-bottom: 20px;
+        }
+
+        .success-message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .back-to-home {
+            background: #382307;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            background: #574522;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="success-message">Form Submitted Successfully!</div>
+        <a href="homepage.html" class="back-to-home">Back to Home</a>
+    </div>
+</body>
+
+</html>

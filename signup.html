@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d2b48c;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://easyletresidential.co.uk/wp-content/uploads/2022/09/shutterstock_1892390203.jpg') center/cover no-repeat;
+            z-index: -1;
+            filter: brightness(50%); /* Adjust brightness if needed */
+        }
+
+        header {
+            background: #382307; /* Woody brown background for nav bar */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #000;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+    width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .sign-up {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #ffffff; /* Beige background for welcome box */
+            color: #000;
+            border-radius: 10px;
+            margin-top: 80px ;
+            max-width: 800px;
+            width: 100%;
+            padding: 30px;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+
+        .gradient-box {
+            flex: 1;
+            padding: 30px;
+            text-align: center;
+           
+        }
+
+        .login-box {
+            background: linear-gradient(135deg, #8b4513, #6e2c00); /* Dark brown gradient for login box */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+            color: #fff;
+        }
+
+        .login-box input {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #8b4513; /* Dark brown border for input */
+            border-radius: 4px;
+        }
+
+        .login-box button {
+            background-color: #8b4513; /* Dark brown background for button */
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .signup-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-box {
+            width: 350px; /* Elongated input fields */
+            padding: 15px;
+            margin-bottom: 20px; /* Increased space between input fields */
+            border: 1px solid #8b4513; /* Dark brown border for input */
+            border-radius: 4px;
+        }
+
+        .password-input {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 15px;
+            align-self: center;
+            cursor: pointer;
+            justify-content: center;
+            justify-self: center;
+        }
+
+        header .profile-icon {
+            margin-left: 20px; /* Added margin to create space between icon and left corner */
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        .footer {
+            background: #3f2107;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="background-image"></div>
+
+    <header>
+        <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+       
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="sign-up">
+        <div class="gradient-box">
+            <h2>Create an Account</h2>
+        </div>
+        <form id="registration-form" action="signup.php" method="post">
+            <div class="signup-box">
+                <input class="input-box" type="text" placeholder="Full Name" name="fullName" required>
+                <input class="input-box" type="email" placeholder="Email" name="email" required>
+                <div class="password-input">
+                    <input class="input-box" type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="password-input">
+                    <input class="input-box" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <input class="input-box" type="tel" placeholder="Phone Number" name="number" required>
+                <input class="input-box" type="date" name="dob" placeholder="Date of Birth" required>
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 Furni Journey. All rights reserved.
+    </div>
+
+</body>
+</html>
+
+
